@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Melike Oruç 2015280023</title>
+</head>
+<body>
+<h2>Melike Oruç 2015280023</h2>
+<h2>2019 Güz Döneminin ilk ödevi</h2>
+<label for="id1">Metin kutusu 1</label>
+<input type='number' id='id1' />
+<br>
+<label for="id2">Metin kutusu 2</label>
+<input type='number' id='id2' />
+<br><br>
+
+<button type="button" onclick="toplam()">Topla</button>
+<br><br>
+
+<script>
+ function toplam()
+{
+    var sayi1=Number(document.getElementById("id1").value)
+    var sayi2=Number(document.getElementById("id2").value)
+    var topla=sayi1+sayi2
+    alert(topla)
+}
+</script>
+
+<label for="id3">Metin kutusu 3</label>
+<input type='text' id='id3' />
+<br>
+<label for="id4">Metin kutusu 4</label>
+<input type='text' id='id4' />
+<br><br>
+<button type="button" onclick = "birlestir()">Yapıştır</button>
+
+<script>
+
+ function birlestir()
+{
+    var isim1=String(document.getElementById("id3").value)
+    var isim2=String(document.getElementById("id4").value)
+    var getir= isim1 + isim2
+    alert(getir)
+}
+
+</script>
+</body>
+</html>
